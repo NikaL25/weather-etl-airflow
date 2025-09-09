@@ -1,0 +1,22 @@
+name: Deploy DAG to Docker Airflow
+
+on:
+  push:
+    branches: [ main ]  # запускаем при пуше в main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Copy DAG to remote Docker host via SCP
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.DOCKER_HOST }}
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASS }}
+        source: "dags/"
+        target: "/home/airflow/airflow/dags/" 

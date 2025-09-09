@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Logs and temporary files
+logs/
+tmp/
+*.log
+
+# Python virtual environments (если ты используешь, но не пушишь)
+venv/
+.env
+.venv/
+
+# Local Airflow config and DB - лучше не пушить, чтобы каждый создавал свой
+airflow.cfg
+airflow.db
+
+# PID files
+*.pid
+
+# VSCode workspace settings (если используешь VSCode)
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+
+# Docker volumes data — не нужно пушить
+postgres_data/
