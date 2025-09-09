@@ -27,7 +27,7 @@ This project implements a simple ETL pipeline using Apache Airflow to extract cu
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/nikal25/weather-etl-airflow.git
+git clone https://github.com/NikaL25/weather-etl-airflow.git
 cd weather-etl-airflow
 
 
