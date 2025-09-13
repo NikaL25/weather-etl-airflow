@@ -106,9 +106,9 @@ Logs for each task can be found in the Airflow UI under the DAG run details.
 
 ### Screenshots
 
-![Airflow DAG List](images/airflow_dag_list.png)
+![Dashboard Screenshot](./images/airflow_dag_list.png)
 
 ### Data in PostgreSQL
 
-![PostgreSQL Data](images/postgres.png)
+![Dashboard Screenshot](./images/postgres.png)  
 ```
