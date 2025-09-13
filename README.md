@@ -29,7 +29,7 @@ This project implements a simple ETL pipeline using Apache Airflow to extract cu
 ```bash
 git clone https://github.com/NikaL25/weather-etl-airflow.git
 cd weather-etl-airflow
-
+```
 
 2. Configure Connections in Airflow UI (optional)
 
